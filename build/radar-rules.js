@@ -6342,6 +6342,19 @@
         source:[ "/news.php",
           "/" ],
         target:"/qbittorrent/news" } ] },
+  "qianzhan.com":{ _name:"前瞻网",
+    ".":[ { title:"文章列表",
+        docs:"https://docs.rsshub.app/finance.html#qian-zhan-wang",
+        source:[ "/analyst",
+          "/analyst/list/:html" ],
+        target:(params) => {
+                    if (params.html) {
+                        const type = params.html.match(/\d+/)[0];
+                        return '/qianzhan-analyst/column/' + type;
+                    } else {
+                        return '/qianzhan-analyst/column/all';
+                    }
+                } } ] },
   "qidiantu.com":{ _name:"起点图",
     ".":[ { title:"首订",
         docs:"https://docs.rsshub.app/reading.html#qi-dian-tu-shou-ding",

@@ -11271,6 +11271,19 @@
       }
     ]
   },
+  "qianzhan.com": {
+    "_name": "前瞻网",
+    ".": [
+      {
+        "title": "文章列表",
+        "docs": "https://docs.rsshub.app/finance.html#qian-zhan-wang",
+        "source": [
+          "/analyst",
+          "/analyst/list/:html"
+        ]
+      }
+    ]
+  },
   "qidiantu.com": {
     "_name": "起点图",
     ".": [
