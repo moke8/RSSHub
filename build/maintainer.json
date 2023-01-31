@@ -2526,6 +2526,9 @@
     "/juejin/trending/:category/:type": [
         "moaix"
     ],
+    "/juejin/events/:city?": [
+        "moke8"
+    ],
     "/jump/discount/:platform/:filter?/:countries?": [
         "zytomorrow"
     ],
